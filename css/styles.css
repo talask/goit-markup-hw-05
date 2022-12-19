@@ -407,3 +407,33 @@ img {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+.bg-modal {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    background: rgba(46, 47, 66, 0.4);
+}
+
+.modal{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+}
+
+.btn-close {
+    position: absolute;
+    right: 32px;
+    top:32px;
+    border-radius: 50%;
+}
+
+.btn-close svg {
+    margin: 8px;
+}
