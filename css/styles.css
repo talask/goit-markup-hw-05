@@ -445,3 +445,7 @@ img {
 .btn-close svg {
     margin: auto;
 }
+
+.is-hidden {
+    opacity: 0;
+}
