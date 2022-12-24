@@ -154,7 +154,7 @@ img {
 
     transition-property: color;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link.current {
@@ -174,7 +174,7 @@ img {
 .contact-link {
     transition-property: color;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover,
@@ -235,7 +235,7 @@ img {
 
     transition-property: background-color;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:focus,
@@ -253,16 +253,18 @@ img {
 /* ----- hero ----- */
 
 .hero {
-    padding-top: 192px;
-    text-align: center;
     max-width: 1440px;
     height: 603px;
+    margin: 0 auto;
+   
     background-image: linear-gradient(rgba(47, 47, 66, 0.7), 
     rgba(47, 47, 66, 0.7)), url('../images/people-office.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
    
+    padding-top: 192px;
+    text-align: center;
 }
 
 .hero-title {
@@ -283,7 +285,7 @@ img {
 
     transition-property: background-color;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     padding: 16px 32px;
     min-width: 170px;
@@ -366,7 +368,7 @@ img {
 
     transition-property: background-color;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     border-radius: 50%;
     background-color: var(--logo-web-color);
@@ -396,7 +398,7 @@ img {
 
     transition-property: border, color;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:focus,
@@ -438,7 +440,7 @@ img {
 
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -462,7 +464,7 @@ img {
 .views-item .link {
     transition-property: box-shadow;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .views-item .link:focus,
@@ -491,7 +493,7 @@ img {
 
     transition-property: transform;
     transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: var(--logo-web-color);
     padding: 40px 32px;
@@ -518,19 +520,21 @@ img {
 
     background: rgba(46, 47, 66, 0.4);
 
+    transition-property: visability, opacity, transform;
     visibility: visible;
     opacity: 1;
-    transition-duration: 250ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: auto;
+    transition-duration: 500ms;
+    transform: scale(1, 1) rotate(0);
+    /* transform-origin: center; */
 }
 
 .backdrop.is-hidden {
+   
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    transition-duration: 500ms;
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+       
     transform: scale(0.1, 0.5) rotate(45deg);
     transform-origin: center;
 }
