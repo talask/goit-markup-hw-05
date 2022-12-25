@@ -283,7 +283,7 @@ img {
     line-height: 1.2;
     text-align: center;
 
-    transition-property: background-color;
+    transition-property: background-color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -294,9 +294,13 @@ img {
 }
 
 .hero-btn:hover,
-.hero-btn:focus,
+.hero-btn:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
+}
+
 .hero-btn:active {
     background-color: var(--hero-click-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* ----- section ----- */
 
