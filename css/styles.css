@@ -293,6 +293,8 @@ img {
     border-radius: 4px;
 }
 
+.hero-btn:hover,
+.hero-btn:focus,
 .hero-btn:active {
     background-color: var(--hero-click-color);
 }
@@ -524,9 +526,8 @@ img {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+    transform: none;
     transition-duration: 500ms;
-    transform: scale(1, 1) rotate(0);
-    /* transform-origin: center; */
 }
 
 .backdrop.is-hidden {
