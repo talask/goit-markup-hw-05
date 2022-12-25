@@ -522,7 +522,7 @@ img {
 
     background: rgba(46, 47, 66, 0.4);
 
-    transition-property: visability, opacity, transform;
+    transition-property: visibility, opacity, transform;
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
